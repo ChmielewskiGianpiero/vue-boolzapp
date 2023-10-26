@@ -30,6 +30,10 @@ menu{
     background-color: var(--light-grey1);
 }
 
+.bg-blue-sky{
+    background-color: var(--blue-sky);
+}
+
 /* PALETTE COLORI */
 
 :root {
@@ -81,21 +85,18 @@ menu{
     top: -115px;
 }
 
-.app-section-left{
-    flex-grow: 1;
-}
-
 .app-section-chat{
-    flex-grow: 3;
+    flex-grow: 1;
 }
 
 
 /* APP SECTION LEFT */
 
-.profile{
+.app-block{
     display: flex;
     align-items: center;
     padding: 10px 15px;
+    gap: 10px;
 }
 
 .user{
@@ -105,15 +106,31 @@ menu{
     flex-grow: 1;
 }
 
-.user-img{
+.icon-img{
     max-width: 50px;
     border-radius: 50px ;
 }
 
-.user-name{
+.user-name,
+.alert-banner h2{
     font-size: 15px;
     font-weight: bold;
 }
+
+.text-down{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.fa-bell-slash{
+    background-color: var(--light);
+    color: var(--blue-sky);
+    border-radius: 50px;
+    width: 50px;
+    aspect-ratio: 1;
+    padding: 15px;
+}
+
 
 
 
