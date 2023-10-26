@@ -34,13 +34,17 @@ menu{
     background-color: var(--blue-sky);
 }
 
+.bg-light {
+    background-color: var(--light);
+}
+
 /* PALETTE COLORI */
 
 :root {
     --blue-sky: #8EDAFD;
     --light-green: #D7F8BD;
     --dark-green: #019689;
-    --grey:#989798;
+    --grey:#757575;
     --light-grey1: #EBE9EB;
     --light-grey2: #DBDAD7;
     --light: #FFFEFF;
@@ -92,10 +96,14 @@ menu{
 
 /* APP SECTION LEFT */
 
-.app-block{
+.app-item,
+.app-search{
     display: flex;
     align-items: center;
     padding: 10px 15px;
+}
+
+.app-item{
     gap: 10px;
 }
 
@@ -129,6 +137,23 @@ menu{
     width: 50px;
     aspect-ratio: 1;
     padding: 15px;
+}
+
+.search-btn{
+    padding: 10px;
+    width: 65px;
+    background-color: var(--light);
+    color: var(--grey);
+}
+
+.search-bar{
+    padding: 10px;
+    width: 100%;
+}
+
+.search-bar,
+.search-btn{
+    border: 1px solid var(--light-grey2);
 }
 
 
