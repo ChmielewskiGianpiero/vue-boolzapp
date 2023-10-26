@@ -9,6 +9,10 @@ img {
    max-width: 100%;
 }
 
+input {
+    all: unset;
+}
+
 ul,
 li,
 menu{
@@ -16,7 +20,7 @@ menu{
 }
 
 .container {
-    width: 980px;
+    width: 1080px;
     margin: 0 auto;
 }
 
@@ -86,11 +90,13 @@ menu{
 
 .position-app{
     position: absolute;
-    top: -115px;
+    top: -150px;
 }
 
 .app-section-chat{
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -140,7 +146,7 @@ menu{
 }
 
 .search-btn{
-    padding: 10px;
+    padding: 12px;
     width: 65px;
     background-color: var(--light);
     color: var(--grey);
@@ -181,6 +187,40 @@ menu{
     align-self: start;
 }
 
+
+/* APP SECTION CHAT */
+
+.fa-message,
+.fa-ellipsis-vertical{
+    color: var(--grey);
+}
+
+.chat-content{
+    background-image: url(../img/mine.jpg);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-keyboard{
+    background-color: var(--light-grey1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.chat-keyboard input{
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid var(--light);
+    background-color: var(--light);
+}
+
+.chat-keyboard i {
+    font-size: 20px;
+}
 
 
 /* DEBUG */
