@@ -90,7 +90,7 @@ menu{
 
 .position-app{
     position: absolute;
-    top: -150px;
+    top: -125px;
 }
 
 .app-section-chat{
@@ -200,6 +200,8 @@ menu{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    padding: 40px;
 }
 
 .chat-keyboard{
@@ -222,6 +224,20 @@ menu{
     font-size: 20px;
 }
 
+.message {
+    background-color: var(--light);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.sent{
+    align-self: flex-end;
+    background-color: var(--light-green);
+}
+
+.received{
+    align-self: flex-start;
+}
 
 /* DEBUG */
 
