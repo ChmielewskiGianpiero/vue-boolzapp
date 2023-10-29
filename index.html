@@ -45,6 +45,7 @@
                         <ul class="bg-light contact-list">
                             <li v-for="(contact, i) in contacts" :key="i"
                             class="user" :class="{ 'active' : i === currentIndex }"
+                            @click="showChat(i)"
                             >
                                 <img class="icon-img" :src="contact.avatar" alt="foto profilo">
                                 <div>
@@ -72,16 +73,18 @@
                         </div>
 
                         <!-- CONTENUTO DELLA CHAT -->
-                        <div class="chat-content">
-                            <p class="message sent">testo inviato</p>
-                            <p class="message received">testo ricevuto</p>
-                            <p class="message sent">testo inviato</p>
-                        </div>
+                        
+                        <ul v-for="(contact, i) in contacts"
+                        class="chat-content" :class="{ 'active' : i === currentIndex}">
+                            <li class="message sent">{{ contacts[currentIndex].messages[0].message }}</li>
+                            <li  class="message received">{{ contacts[currentIndex].messages[1].message }}</li>
+                            <li class="message sent">{{ contacts[currentIndex].messages[2].message }}</li>
+                        </ul>
 
                         <!-- INPUT PER SCRIVERE IL TESTO DEL MESSAGGIO -->
                         <div class="chat-keyboard">
                             <i class="fa-regular fa-face-smile"></i>
-                            <input type="text" placeholder="Scrivi un messaggio">
+                            <input type="text" placeholder="Scrivi un messaggio" >
                             <i class="fa-solid fa-microphone"></i>
                         </div>
                     </div>

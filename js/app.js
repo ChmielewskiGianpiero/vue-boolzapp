@@ -3,12 +3,13 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            currentIndex: 0,
+            currentIndex: 1,
             contacts: [
                 {
                     name: 'Michele',
                     avatar: './img/avatar_1.jpg',
                     visible: true,
+                    currentIndex: 1,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -170,7 +171,9 @@ createApp({
         }
     },
     methods: {
-
+        showChat(contactIndex){
+                this.currentIndex = contactIndex
+        }
         
     }
 }).mount('#app');

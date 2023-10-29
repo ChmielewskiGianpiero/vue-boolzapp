@@ -202,6 +202,7 @@ menu{
     flex-direction: column;
     gap: 15px;
     padding: 40px;
+    display: none;
 }
 
 .chat-keyboard{
@@ -237,6 +238,10 @@ menu{
 
 .received{
     align-self: flex-start;
+}
+
+.active {
+    display: flex;
 }
 
 /* DEBUG */
